@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Cross Browser com.anatolii.anitsai.hitway.test.TestHitwi Suite" thread-count="1" parallel="tests">
+
+
+    <test name="com.anatolii.anitsai.hitway.test.TestHitwi Chrome">
+        <parameter name="browserType" value="Firefox"></parameter>
+        <classes>
+            <class name="com.anatolii.anitsai.hitway.test.TestHitwi"/>
+        </classes>
+    </test>
+
+
+    <test name="com.anatolii.anitsai.hitway.test.TestHitwi FireFox">
+        <parameter name="browserType" value="Chrome"></parameter>
+        <classes>
+            <class name="com.anatolii.anitsai.hitway.test.TestHitwi"/>
+        </classes>
+    </test>
+</suite>
